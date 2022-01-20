@@ -71,4 +71,4 @@ var slideshow = function slideshow(time, selector) {
 
 var mySlideshow1 = new slideshow(3000, ".slideshow1");
 var mySlideshow2 = new slideshow(1000, ".slideshow2");
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main.done.js.map
