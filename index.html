@@ -1,13 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title> Slideshow </title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Slideshow</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="dist/css/main.css">
+		<link rel="stylesheet" href="dist/css/main.css" />
 
 		<!--
 			Do I work in src or dist?
@@ -15,22 +15,20 @@
 			Go here to learn more:
 			https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders
 		-->
-		
 	</head>
 	<body>
-		
 		<div class="slideshow slideshow1">
-			<img src="dist/img/sunset1.jpg" alt="sunset image" class="slide active">
-			<img src="dist/img/sunset2.jpg" alt="sunset image" class="slide ">
-			<img src="dist/img/sunset3.jpg" alt="sunset image" class="slide ">
-			<img src="dist/img/sunset4.jpg" alt="sunset image" class="slide ">
+			<img src="dist/img/sunset1.jpg" alt="sunset image" class="slide active" />
+			<img src="dist/img/sunset2.jpg" alt="sunset image" class="slide" />
+			<img src="dist/img/sunset3.jpg" alt="sunset image" class="slide" />
+			<img src="dist/img/sunset4.jpg" alt="sunset image" class="slide" />
 		</div>
-		
+
 		<button class="prev">Previous</button>
 		<button class="stop">Stop</button>
 		<button class="start">Start (play)</button>
 		<button class="next">Next</button>
-		<br>
+		<br />
 		<button class="jump0">Jump to slide 0</button>
 		<button class="jump1">Jump to slide 1</button>
 		<button class="jump2">Jump to slide 2</button>
@@ -38,36 +36,33 @@
 
 		<script src="dist/js/main.js"></script>
 
-
 		<script>
-			let mySlideshow1 = slideshow(3000, ".slideshow1")
-			
-			document.querySelector(".prev").onclick = function() {
+			let mySlideshow1 = slideshow(3000, '.slideshow1')
+
+			document.querySelector('.prev').onclick = function () {
 				mySlideshow1.prev()
 			}
-			document.querySelector(".stop").onclick = function() {
+			document.querySelector('.stop').onclick = function () {
 				mySlideshow1.stop()
 			}
-			document.querySelector(".start").onclick = function() {
+			document.querySelector('.start').onclick = function () {
 				mySlideshow1.start()
 			}
-			document.querySelector(".next").onclick = function() {
+			document.querySelector('.next').onclick = function () {
 				mySlideshow1.next()
 			}
-			document.querySelector(".jump0").onclick = function() {
+			document.querySelector('.jump0').onclick = function () {
 				mySlideshow1.jump(0)
 			}
-			document.querySelector(".jump1").onclick = function() {
+			document.querySelector('.jump1').onclick = function () {
 				mySlideshow1.jump(1)
 			}
-			document.querySelector(".jump2").onclick = function() {
+			document.querySelector('.jump2').onclick = function () {
 				mySlideshow1.jump(2)
 			}
-			document.querySelector(".jump3").onclick = function() {
+			document.querySelector('.jump3').onclick = function () {
 				mySlideshow1.jump(3)
 			}
 		</script>
-
-
 	</body>
 </html>
